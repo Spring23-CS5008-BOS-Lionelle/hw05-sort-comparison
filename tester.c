@@ -7,7 +7,7 @@
 #include "sorts.h"
 
 // these are called function pointers
-void (*sorts[])(int *, unsigned int) = {
+void (*sorts[])(int *, unsigned int, int) = {
     bubbleSortIntegers,
     selectionSortIntegers,
     insertionSortIntegers,
@@ -28,13 +28,13 @@ int* get_random_array(int size) {
 }
 
 
-double sort_and_time(int* array, int size, int type) {
+double sort_and_time(int* array, int size, int type, int print) {
     // Setup timers
     struct timespec begin, end;
     // Get the time before we start
     clock_gettime(CLOCK_MONOTONIC_RAW, &begin);
     // Perform the sort
-    sorts[type](array, size);
+    sorts[type](array, size, print);
     // Get the time after we are done
     clock_gettime(CLOCK_MONOTONIC_RAW, &end);
 
@@ -84,7 +84,7 @@ int main(int argc, char const *argv[])
         printIntArray(random, size);
     }
 
-    double time_taken = sort_and_time(random, size, type);
+    double time_taken = sort_and_time(random, size, type, print);
 
     // Confirm the sort worked
     if (print)

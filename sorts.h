@@ -26,8 +26,9 @@ int findMinimum(int *array, int start, int stop)
 //  - 'array' is a pointer to an integer address.
 //     This is the start of some 'contiguous block of memory' that we will sort.
 //  - 'size' tells us how big the array of data is we are sorting.
+//  -  'print' tells it to print out after each interation
 // Output: No value is returned, but 'array' should be modified to store a sorted array of numbers.
-void selectionSortIntegers(int *array, unsigned int size)
+void selectionSortIntegers(int *array, unsigned int size, int print)
 {
     // todo: implement selection sort
 }
@@ -43,8 +44,9 @@ void selectionSortIntegers(int *array, unsigned int size)
 //  - 'array' is a pointer to an integer address.
 //     This is the start of some 'contiguous block of memory' that we will sort.
 //  - 'size' tells us how big the array of data is we are sorting.
+//  - 'print' tells it to print out after each iteration 
 // Output: No value is returned, but 'array' should be modified to store a sorted array of numbers.
-void insertionSortIntegers(int *array, unsigned int size)
+void insertionSortIntegers(int *array, unsigned int size, int print)
 {
     // TODO: Implement insertion sort
  
@@ -61,9 +63,10 @@ void insertionSortIntegers(int *array, unsigned int size)
 //           that we will sort.
 // param(2)  'size' tells us how big the array of
 //           data is we are sorting.
+// param(3) 'print' tells it to print out after each iteration.
 // Output:   No value is returned, but 'array' should
 //           be modified to store a sorted array of size.
-void bubbleSortIntegers(int *array, unsigned int size)
+void bubbleSortIntegers(int *array, unsigned int size, int print)
 {
     // code generated from lab
 
@@ -85,9 +88,9 @@ int compare(const void *a, const void *b)
     return (*(int *)a - *(int *)b);
 }
 
-void quickSortIntegers(int* array, unsigned int size) 
-{
-    qsort(array, 11, sizeof(int), compare);
+void quickSortIntegers(int* array, unsigned int size, int print) 
+{   // print is ignored as qsort doesn't use it
+    qsort(array, size, sizeof(int), compare);
 }
 
 #endif

@@ -20,21 +20,21 @@ int main(int argc, char *argv[])
     int dataset5[] = {100, 201, 52, 3223, 24, 55, 623, 75, 8523, -9, 150};
     int dataset6[] = {-1, 1, 2, -3, 4, 5, -6, 7, 8, -9, 10};
 
-    // Sort our integer array
-    insertionSortIntegers(dataset1, 11);
-    insertionSortIntegers(dataset2, 11);
-    insertionSortIntegers(dataset3, 11);
-    insertionSortIntegers(dataset4, 11);
-    insertionSortIntegers(dataset5, 11);
-    insertionSortIntegers(dataset6, 11);
+    int print = 1;
 
-    // Print out an array
-    printIntArray(dataset1, 11);
-    printIntArray(dataset2, 11);
-    printIntArray(dataset3, 11);
-    printIntArray(dataset4, 11);
-    printIntArray(dataset5, 11);
-    printIntArray(dataset6, 11);
+    // Sort our integer array
+    insertionSortIntegers(dataset1, 11, print);
+    printf("\n");
+    insertionSortIntegers(dataset2, 11, print);
+    printf("\n");
+    insertionSortIntegers(dataset3, 11, print);
+    printf("\n");
+    insertionSortIntegers(dataset4, 11, print);
+    printf("\n");
+    insertionSortIntegers(dataset5, 11, print);
+    printf("\n");
+    insertionSortIntegers(dataset6, 11, print);
+
 
    return 0;
 }
