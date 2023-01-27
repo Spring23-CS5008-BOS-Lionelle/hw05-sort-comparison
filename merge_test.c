@@ -23,15 +23,10 @@ int main(int argc, char *argv[])
 
     // Sort our integer array
     mergeSortIntegers(dataset1, 11, print);
-    printf("\n");
     mergeSortIntegers(dataset2, 11, print);
-    printf("\n");
     mergeSortIntegers(dataset3, 11, print);
-    printf("\n");
     mergeSortIntegers(dataset4, 11, print);
-    printf("\n");
     mergeSortIntegers(dataset5, 11, print);
-    printf("\n");
     mergeSortIntegers(dataset6, 11, print);
 
 
@@ -41,6 +36,6 @@ int main(int argc, char *argv[])
     printIntArray(dataset4, 11);
     printIntArray(dataset5, 11);
     printIntArray(dataset6, 11);
-    
+
     return 0;
 }
