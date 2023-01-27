@@ -19,14 +19,33 @@ Include the image in your markdown. As a reminder, you save the image in your re
 
 
 
-
-
 ### 2. Convinced?
 Given the direction of the line chart, are you "convinced" of the complexity of each of the sorts? Why or why not?
 
 
 ### 3. Big O
 Build another table that presents the best, worst, and average case for Bubble, Selection, and Insertion. You are free to use resources for this, but please reference them if you do. 
+
+### 4. Growth of Functions
+Give the following values, place them correctly into *six* categories. Use the bullets, and feel free to cut and past the full LatexMath we used to generate them.  
+
+$n^2$  
+$n!$  
+$nlog_2n$  
+$5n^2+5n$  
+$10000$  
+$3n$    
+$100$  
+$2^n$  
+$100n$  
+$2^{(n-1)}$
+#### Categories
+* 
+*
+*
+*
+*
+*
 
 
 <!-- links moved to bottom for easier reading in plain text (btw, this a comment that doesn't show in the webpage generated-->
