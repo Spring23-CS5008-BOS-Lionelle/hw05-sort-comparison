@@ -24,8 +24,8 @@ Support files to help with implementation and experimentation:
 
 
 Documentation:
-* [README.md](../README.md) - This README.md has more technical questions in it. Please review markdown math and tables to help you out, you may even add images.  To help TAs with grading, we are asking you to include a link to to your repo, please don't forget. 
-* [SortData.md](../SortData.md) - This is where you will build your data table for your experiment. 
+* [README.md](../README.md) -  To help TAs with grading, we are asking you to include a link to to your repo, please don't forget. 
+* [Report.md](../Report.md) - This is where you will build your data table for your experiment, and answer technical questions. 
 
 ## Commonality Between These Sorts
 Both Selection Sort and Insertion Sort are meant to be [in place algorithms]. This means the function has 'side affects' which isn't always ideal in modern development, but for sorting of arrays it is often common and effective. Your familiarity with python may cause you to recall sort() and sorted() making a distinction on which one returns a new list and which one modified the original list. The sort() function is an in-place destructive (modifies the parameters) function, similar to what you are writing.
@@ -110,7 +110,11 @@ Using tester.c, generate a table of timings based on total values sorted. You wi
 
 In truth, your times should be pretty low, and they will vary a lot more. Please make sure to use [markdown table formatting](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables), so when TAs view it in github, it looks like a table, and not just text. 
 
-Under the table, make sure to answer the questions specific to your analysis insides of [SortData.md](../SortData.md)
+Under the table, make sure to answer the questions specific to your analysis insides of  [Report.md](../Report.md).
+
+We encourage you to spend time, and craft clear answers. You will find markdown has ways to create [diagrams](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams) and [math expressions](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
+
+
 
 ### Growth
 
@@ -131,8 +135,7 @@ Another way to look at it, we can think about our searches we touched on in 5001
 
 ## README.md
 
-Your [README.md](../README.md) has more questions this week. I encourage you to spend time, and craft clear answers. You will find markdown has ways to create [diagrams](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams) and [math expressions](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
-
+Your [README.md](../README.md) has its questions moved to [Report.md](../Report.md). 
 
 ## 📝 Grading Rubric
 
@@ -148,10 +151,11 @@ Add (AG) and (MG) next to tiers, add major conditions to meet to pass each tier.
    * Neither fail when an array is 0 length
 3. Meets  (MG)
    * Comments added to the sorts explaining what each part does.
-   * SortData is completed both table and questions answered.
+   * SortData is completed table and charts.
 4. Exceeds  (MG)
    * Commits checked (at least 3)
-   * README.md is completed - with questions answered fully and correctly. 
+   * README.md is completed 
+   * SortData questions are properly
 
 
 AG - Auto-graded  

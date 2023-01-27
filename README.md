@@ -1,8 +1,12 @@
-# HW README
+# Homework 05 README
 
 Name:
 
 Github Account name: 
+
+URL to your Homework 05 Repo: 
+
+---
 
 How many hours did it take you to complete this assignment (estimate)? 
 
@@ -18,7 +22,6 @@ Did you use any external resources (you do not have to cite in class material)? 
 
 (Optional) How would you improve the assignment? 
 
-## Questions Answers (change to better heading)
 
 
 ## Important notes
