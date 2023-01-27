@@ -26,6 +26,16 @@ Given the direction of the line chart, are you "convinced" of the complexity of 
 ### 3. Big O
 Build another table that presents the best, worst, and average case for Bubble, Selection, and Insertion. You are free to use resources for this, but please reference them if you do. 
 
+
+#### 3.2 Worst Case
+Provide example of arrays that generate _worst_ case for Bubble, Selection, and Insertion Sorts
+
+
+#### 3.3 Best Case
+Provide example of arrays that generate _best_ case for Bubble, Selection, and Insertion Sorts 
+
+
+
 ### 4. Growth of Functions
 Give the following values, place them correctly into *six* categories. Use the bullets, and feel free to cut and past the full LatexMath we used to generate them.  
 
@@ -46,6 +56,38 @@ $2^{(n-1)}$
 *
 *
 *
+
+### 5. Growth of Function Language
+
+Pair the following terms with the correct function in the table. 
+* Constant, Logarithmic, Linear, Quadratic, Cubic, Exponential, Factorial
+
+| Big $O$     |  Name  |
+| ------      | ------ |
+| $O(n^3)$    |  your answer here |
+| $O(1)$      |   |
+| $O(n)$      |   |
+| $O(log_2n)$ |   |
+| $O(n^2)$    |   |
+| $O(n!)$     |   |
+| $O(2^n)$    |   |
+
+
+
+### 6. Stable vs Unstable
+Look up stability as it refers to sorting. In your own words, describe one sort that is stable and one sort that isn't stable (hint, of the three we did, two are considered stable, and while is not). 
+
+
+### 7. Gold Thief
+
+You are planning a heist to steal a rare coin that weighs 1.0001 ounces. The problem is that the rare coin was mixed with a bunch of counter fit coins. You know the counter fit coins only weight 1.0000 ounce each. There are in total 250 coins.  You have a simple balance scale where the coins can be weighed against each other. Hint: don't think about all the coins at once, but how you can break it up into even(ish) piles. 
+
+#### 7.1 Algorithm
+Describe an algorithm that will help you find the coin. We encourage you to use pseudo-code, but not required.
+
+#### 7.2 Time Complexity
+What is the average time complexity of your algorithm? 
+
 
 
 <!-- links moved to bottom for easier reading in plain text (btw, this a comment that doesn't show in the webpage generated-->
