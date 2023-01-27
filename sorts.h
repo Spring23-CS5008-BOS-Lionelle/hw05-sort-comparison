@@ -72,6 +72,53 @@ void bubbleSortIntegers(int *array, unsigned int size, int print)
 
 }
 
+// ** You will work on merge sort during the lab on Module 06 ** //
+
+// Merges two subarrays of arr[].
+// First subarray is arr[l..m]
+// Second subarray is arr[m+1..r]
+void merge(int arr[], int temp[], int l, int m, int r)
+{
+    if (arr == NULL || temp == NULL)
+    {
+        exit(1);
+    }
+
+    if (l > m || m + 1 > r)
+        return;
+
+
+}
+
+// To be built during week 6 lab
+// Name: mergeSort
+// Input(s):
+//          (1) 'arr' is a pointer to an integer address.
+//              This is the start of some 'contiguous block of memory' that we will sort.
+//          (2) 'temp' is a pointer to an integer address.
+//          	This helps temporarily store the sorted subarray.
+//          (3) 'l' and 'r' are integers, which are the first index and the last index of 'arr' respectively.
+// Output: No value is returned, but 'array' should be modified to store a sorted array of numbers.
+void merge_sort(int arr[], int temp[], int l, int r)
+{
+   
+}
+
+// lab build, merge sort
+
+void mergeSortIntegers(int *array, unsigned int size, int print)
+{ // print is ignored for this one
+    if (array == NULL)
+    {
+        exit(1);
+    }
+    if (size <= 1)
+        return;
+
+    int *temp = (int *)malloc(sizeof(int) * size);
+    merge_sort(array, temp, 0, size - 1);
+    free(temp);
+}
 
 // provided code 
 

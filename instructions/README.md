@@ -1,9 +1,11 @@
 # Homework 05 - Sort Analysis
 
 > **Notice**
-> This assignment builds directly on Workshop 05 - Bubble Sort. You will want to make that code is completed. 
+> This assignment builds directly on Workshop 05 - Bubble Sort and Workshop 06 - Merge Sort. You will want to make that code is completed. 
 > Hopefully, you attended lab/workshop, which  mean you completed it with a partner. Please make sure
-> to include their name in your readme. 
+> to include their name in your readme.  
+
+> This is a two week assignment! (essentially both Homework 05 and 06 combined)
 
 For this homework, you will be writing two other Quadratic Sorts, $O(n^2)$: Insertion and Substitution sort. 
 More importantly, you will be running an experiment getting timings for the sorts, and thinking
@@ -20,6 +22,7 @@ The files that you will implement:
 Support files to help with implementation and experimentation:
 * [insertion_test.c](../insertion_test.c) - provides a few static tests to help with development. 
 * [selection_test.c](../selection_test.c)  - provides a few static tests to help with development.
+* [merge_test.c](../merge_test.c) -- provides a few static tests for merge start (Workshop 06)
 * [tester.c](../tester.c) - this is the main driver of your program. It will randomly generate arrays, and collect the time it takes to sort the array. You can also specify four different sorts to use, so once all your code is working, use this file to generate data for your experiment. If you want, you may considering writing a script that runs this file repeatedly.
 
 
@@ -102,11 +105,11 @@ Here is another example:
 
 Using tester.c, generate a table of timings based on total values sorted. You will want build a table similar to the following (the values are made-up)
 
-| N | Bubble | Selection | Insertion | Quick |
-| :-- | :--: | :--: | :--: | :--: |
-| 10 | 0.05 | 0.02 | 0.0001 | 1 |
-| 100 | 0.5 | 0.2 | 0.001 | 10 |
-| 1000 | 5 | 2 | 0.01 | 100 |
+| N | Bubble | Selection | Insertion | Merge | Quick |
+| :-- | :--: | :--: | :--: | :--: | :--: |
+| 10 | 0.05 | 0.02 | 0.0001 | 1 | .5 |
+| 100 | 0.5 | 0.2 | 0.001 | 10 | .3 |
+| 1000 | 5 | 2 | 0.01 | 100 | .1 |
 
 In truth, your times should be pretty low, and they will vary a lot more. Please make sure to use [markdown table formatting](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables), so when TAs view it in github, it looks like a table, and not just text. 
 
@@ -151,11 +154,11 @@ Add (AG) and (MG) next to tiers, add major conditions to meet to pass each tier.
    * Neither fail when an array is 0 length
 3. Meets  (MG)
    * Comments added to the sorts explaining what each part does.
-   * SortData is completed table and charts.
+   * Report is completed table and charts.
 4. Exceeds  (MG)
    * Commits checked (at least 3)
    * README.md is completed 
-   * SortData questions are properly
+   * Report questions are properly answered
 
 
 AG - Auto-graded  

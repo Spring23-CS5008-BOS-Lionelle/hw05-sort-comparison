@@ -1,13 +1,13 @@
 # Sort Analysis Data
 
 ## Results Table
-Make sure to go out to at least 100,000 (more are welcome), and you have 10 different values (more welcome). You are welcome to go farther, but given 100,000 can take about 20 seconds on a fast desktop computer, and 200,000 took 77 seconds, you start having to wait much longer the more 0s you add. However, to build a clearer line, you will want more data points. 
+Make sure to go out to at least 100,000 (more are welcome), and you have 10 different values (more welcome). You are welcome to go farther, but given 100,000 can take about 20 seconds using a selection sort on a fast desktop computer, and 200,000 took 77 seconds, you start having to wait much longer the more 0s you add. However, to build a clearer line, you will want more data points, and you will find merge and quick are able to handle higher numbers easier (but at a cost you will explore below). 
 
-You are free to write a script to run the program and build your table (then copy that table built into the markdown). If you do that, please include the script into the repo. 
+You are free to write a script to run the program and build your table (then copy that table built into the markdown). If you do that, please include the script into the repo.  Note: merge sort is going to be completed in the workshop for Module 06. You can start on it now, but welcome to wait.
 
 ### Table
-| N | Bubble | Selection | Insertion | Quick |
-| :-- | :--: | :--: | :--: | :--: |
+| N | Bubble | Selection | Insertion | Merge | Quick |
+| :-- | :--: | :--: | :--: | :--: | :--: |
 
 
 ## BigO Analysis  / Questions
@@ -24,20 +24,22 @@ Given the direction of the line chart, are you "convinced" of the complexity of 
 
 
 ### 3. Big O
-Build another table that presents the best, worst, and average case for Bubble, Selection, and Insertion. You are free to use resources for this, but please reference them if you do. 
+Build another table that presents the best, worst, and average case for Bubble, Selection, Insertion, Merge, and Quick. You are free to use resources for this, but please reference them if you do. 
 
 
 #### 3.2 Worst Case
-Provide example of arrays that generate _worst_ case for Bubble, Selection, and Insertion Sorts
+Provide example of arrays that generate _worst_ case for Bubble, Selection, Insertion, Merge Sorts
 
 
 #### 3.3 Best Case
-Provide example of arrays that generate _best_ case for Bubble, Selection, and Insertion Sorts 
+Provide example of arrays that generate _best_ case for Bubble, Selection, Insertion, Merge Sorts 
 
 
+#### 3.4 Memory Considerations
+Order the various sorts based on which take up the most memory when sorting to the least memory. You may have to research this, and include the mathematical notation. 
 
 ### 4. Growth of Functions
-Give the following values, place them correctly into *six* categories. Use the bullets, and feel free to cut and past the full LatexMath we used to generate them.  
+Give the following values, place them correctly into *six* categories. Use the bullets, and feel free to cut and paste the full LatexMath we used to generate them.  
 
 $n^2$  
 $n!$  
@@ -75,8 +77,11 @@ Pair the following terms with the correct function in the table.
 
 
 ### 6. Stable vs Unstable
-Look up stability as it refers to sorting. In your own words, describe one sort that is stable and one sort that isn't stable (hint, of the three we did, two are considered stable, and while is not). 
+Look up stability as it refers to sorting. In your own words, describe one sort that is stable and one sort that isn't stable  
 
+
+### 6.2 When stability is needed?
+Explain in your own words a case in which you will want a stable algorithm over an unstable. Include an example. 
 
 ### 7. Gold Thief
 
