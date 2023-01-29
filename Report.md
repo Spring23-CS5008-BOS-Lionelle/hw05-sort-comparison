@@ -43,7 +43,7 @@ Give the following values, place them correctly into *six* categories. Use the b
 
 $n^2$  
 $n!$  
-$nlog_2n$  
+$n\log_2n$  
 $5n^2+5n$  
 $10000$  
 $3n$    
@@ -69,7 +69,7 @@ Pair the following terms with the correct function in the table.
 | $O(n^3)$    |  your answer here |
 | $O(1)$      |   |
 | $O(n)$      |   |
-| $O(log_2n)$ |   |
+| $O(\log_2n)$ |   |
 | $O(n^2)$    |   |
 | $O(n!)$     |   |
 | $O(2^n)$    |   |

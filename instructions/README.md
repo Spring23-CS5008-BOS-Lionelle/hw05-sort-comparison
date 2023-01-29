@@ -130,9 +130,9 @@ Another way to look at it, we can think about our searches we touched on in 5001
 |Algorithm|	Complexity | n = 100 |  n = 100,000 |
 | :-- | :--: | -- | -- |
 |Linear Search| $O(n)$| 100 | 100,000 |
-|Binary Search| $O(log_2(n))$ | 6.64 | 16.60 |
+|Binary Search| $O(\log_2(n))$ | 6.64 | 16.60 |
 
-> Note: the base 2 of log is often left out in comparison. We included it, so if you took $log(100)$, you would remember it is actually, $log_2(100) = 6.64$.
+> Note: the base 2 of log is often left out in comparison. We included it, so if you took $\log(100)$, you would remember it is actually, $\log_2(100) = 6.64$.
 
 
 
